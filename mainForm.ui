@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Meitu</class>
+ <widget class="QMainWindow" name="Meitu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbCamera">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Camera Area</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenCamera">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open Camera</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbImageGrabbed">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Image Grabbed</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGrabImage">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>420</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Grab Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBeautyImage">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>120</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Beauty Image</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGray">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>350</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gray</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>350</y>
+      <width>20</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSmooth">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>420</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Smooth</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLargeEyes">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>350</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Large Eyes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSmallFace">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>420</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Small Face</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnContour">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>350</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Contour</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnThreshold">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>420</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Threshold</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>20</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Caslon Pro</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>Meitu</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnOpenCamera</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>open_camera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGrabImage</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>grab_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGray</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>gray()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSmooth</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>smooth()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>478</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLargeEyes</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>large_eyes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSmallFace</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>small_face()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>521</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnContour</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>contour()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>640</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>668</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnThreshold</sender>
+   <signal>clicked()</signal>
+   <receiver>Meitu</receiver>
+   <slot>threshold()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>645</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>695</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open_camera()</slot>
+  <slot>grab_image()</slot>
+  <slot>gray()</slot>
+  <slot>smooth()</slot>
+  <slot>large_eyes()</slot>
+  <slot>small_face()</slot>
+  <slot>contour()</slot>
+  <slot>threshold()</slot>
+ </slots>
+</ui>
